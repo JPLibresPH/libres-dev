@@ -1,0 +1,422 @@
+/* Don't be afraid of this, it's just an array with keys values to keep configuration easier ;) */
+/* ------- DO NOT EDIT BELOW --------- */
+.chart-webdev-first {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  position: relative;
+}
+.chart-webdev-first.animate svg .circle-foreground {
+  animation: offset 3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-first.animate figcaption:after {
+  animation: chart-webdev-first-label 3s steps(90) forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-first svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-webdev-first svg .circle-background, .chart-webdev-first svg .circle-foreground {
+  r: 24px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #3c3c3c;
+  stroke-width: 8px;
+}
+.chart-webdev-first svg .circle-foreground {
+  stroke: #707070;
+  stroke-dasharray: 135.648px 150.72px;
+  stroke-dashoffset: 135.648px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-webdev-first figcaption {
+  display: inline-block;
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  text-align: center;
+  color: #505050;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-webdev-first figcaption:after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+@keyframes chart-webdev-first-label {
+  100% {
+    transform: translateY(-90rem);
+  }
+}
+.chart-webdev-second {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  position: relative;
+}
+.chart-webdev-second.animate svg .circle-foreground {
+  animation: offset 3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-second.animate figcaption:after {
+  animation: chart-webdev-second-label 3s steps(90) forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-second svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-webdev-second svg .circle-background, .chart-webdev-second svg .circle-foreground {
+  r: 24px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #3c3c3c;
+  stroke-width: 8px;
+}
+.chart-webdev-second svg .circle-foreground {
+  stroke: #707070;
+  stroke-dasharray: 135.648px 150.72px;
+  stroke-dashoffset: 135.648px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-webdev-second figcaption {
+  display: inline-block;
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  text-align: center;
+  color: #505050;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-webdev-second figcaption:after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+@keyframes chart-webdev-second-label {
+  100% {
+    transform: translateY(-90rem);
+  }
+}
+.chart-webdev-third {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  position: relative;
+}
+.chart-webdev-third.animate svg .circle-foreground {
+  animation: offset 3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-third.animate figcaption:after {
+  animation: chart-webdev-third-label 3s steps(20) forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-third svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-webdev-third svg .circle-background, .chart-webdev-third svg .circle-foreground {
+  r: 24px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #3c3c3c;
+  stroke-width: 8px;
+}
+.chart-webdev-third svg .circle-foreground {
+  stroke: #707070;
+  stroke-dasharray: 30.144px 150.72px;
+  stroke-dashoffset: 30.144px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-webdev-third figcaption {
+  display: inline-block;
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  text-align: center;
+  color: #505050;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-webdev-third figcaption:after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+@keyframes chart-webdev-third-label {
+  100% {
+    transform: translateY(-20rem);
+  }
+}
+.chart-webdev-fourth {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  position: relative;
+}
+.chart-webdev-fourth.animate svg .circle-foreground {
+  animation: offset 3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-fourth.animate figcaption:after {
+  animation: chart-webdev-fourth-label 3s steps(20) forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-fourth svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-webdev-fourth svg .circle-background, .chart-webdev-fourth svg .circle-foreground {
+  r: 24px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #3c3c3c;
+  stroke-width: 8px;
+}
+.chart-webdev-fourth svg .circle-foreground {
+  stroke: #707070;
+  stroke-dasharray: 30.144px 150.72px;
+  stroke-dashoffset: 30.144px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-webdev-fourth figcaption {
+  display: inline-block;
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  text-align: center;
+  color: #505050;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-webdev-fourth figcaption:after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+@keyframes chart-webdev-fourth-label {
+  100% {
+    transform: translateY(-20rem);
+  }
+}
+.chart-webdev-fifth {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  position: relative;
+}
+.chart-webdev-fifth.animate svg .circle-foreground {
+  animation: offset 3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-fifth.animate figcaption:after {
+  animation: chart-webdev-fifth-label 3s steps(20) forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-fifth svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-webdev-fifth svg .circle-background, .chart-webdev-fifth svg .circle-foreground {
+  r: 24px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #3c3c3c;
+  stroke-width: 8px;
+}
+.chart-webdev-fifth svg .circle-foreground {
+  stroke: #707070;
+  stroke-dasharray: 30.144px 150.72px;
+  stroke-dashoffset: 30.144px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-webdev-fifth figcaption {
+  display: inline-block;
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  text-align: center;
+  color: #505050;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-webdev-fifth figcaption:after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+@keyframes chart-webdev-fifth-label {
+  100% {
+    transform: translateY(-20rem);
+  }
+}
+.chart-webdev-sixth {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  position: relative;
+}
+.chart-webdev-sixth.animate svg .circle-foreground {
+  animation: offset 3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-sixth.animate figcaption:after {
+  animation: chart-webdev-sixth-label 3s steps(20) forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-sixth svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-webdev-sixth svg .circle-background, .chart-webdev-sixth svg .circle-foreground {
+  r: 24px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #3c3c3c;
+  stroke-width: 8px;
+}
+.chart-webdev-sixth svg .circle-foreground {
+  stroke: #707070;
+  stroke-dasharray: 30.144px 150.72px;
+  stroke-dashoffset: 30.144px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-webdev-sixth figcaption {
+  display: inline-block;
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  text-align: center;
+  color: #505050;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-webdev-sixth figcaption:after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+@keyframes chart-webdev-sixth-label {
+  100% {
+    transform: translateY(-20rem);
+  }
+}
+.chart-webdev-seventh {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  position: relative;
+}
+.chart-webdev-seventh.animate svg .circle-foreground {
+  animation: offset 3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-seventh.animate figcaption:after {
+  animation: chart-webdev-seventh-label 3s steps(20) forwards;
+  animation-delay: 1s;
+}
+.chart-webdev-seventh svg {
+  width: 100%;
+  height: 100%;
+}
+.chart-webdev-seventh svg .circle-background, .chart-webdev-seventh svg .circle-foreground {
+  r: 24px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #3c3c3c;
+  stroke-width: 8px;
+}
+.chart-webdev-seventh svg .circle-foreground {
+  stroke: #707070;
+  stroke-dasharray: 30.144px 150.72px;
+  stroke-dashoffset: 30.144px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.chart-webdev-seventh figcaption {
+  display: inline-block;
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  text-align: center;
+  color: #505050;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: 0;
+  font-size: 0;
+}
+.chart-webdev-seventh figcaption:after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+@keyframes chart-webdev-seventh-label {
+  100% {
+    transform: translateY(-20rem);
+  }
+}
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*# sourceMappingURL=graph.css.map */
