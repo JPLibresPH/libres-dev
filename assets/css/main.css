@@ -626,14 +626,23 @@ section,
 /*--- SVG ---*/
 
 :root{
-  --illustrator-size: clamp(400px, 100%, 450px);
+  --illustrator-size: clamp(300px, 100%, 400px);
 }
 
-.illustration {
-	position: relative;
+.hero-section .col-12.col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .illustration {
   width: var(--illustrator-size);
   height: auto;
-	margin: 0 auto;
+  margin: 0 auto;
+  display: block;
+  position: static;
+  transform: none;
+  top: auto;
 }
 
  .hover {
@@ -710,34 +719,7 @@ section,
 	 animation-delay: 3451ms;
 	 animation-fill-mode: forwards;
 }
- .text-ten {
-	 transform: translateY(-110px) translateZ(0);
-	 opacity: 0;
-	 animation: fadeNumberDown-110 3931ms ease-in-out infinite;
-	 animation-delay: 626ms;
-	 animation-fill-mode: forwards;
-}
- .text-eleven {
-	 transform: translateY(-120px) translateZ(0);
-	 opacity: 0;
-	 animation: fadeNumberDown-120 5208ms ease-in-out infinite;
-	 animation-delay: 1277ms;
-	 animation-fill-mode: forwards;
-}
- .text-twelve {
-	 transform: translateY(-150px) translateZ(0);
-	 opacity: 0;
-	 animation: fadeNumberDown-150 2028ms ease-in-out infinite;
-	 animation-delay: 3441ms;
-	 animation-fill-mode: forwards;
-}
- .text-thirteen {
-	 transform: translateY(-10px) translateZ(0);
-	 opacity: 0;
-	 animation: fadeNumberDown-160 5923ms ease-in-out infinite;
-	 animation-delay: 1108ms;
-	 animation-fill-mode: forwards;
-}
+
  @keyframes hover {
 	 0% {
 		 transform: translateY(0);
@@ -962,10 +944,22 @@ section,
 }
  
 @media (max-width: 768px) {
+  .illustration {
+    max-width: 400px;
+  }
+}
 
-  .hover {
-    margin-top: 60px;
-    --illustrator-size: clamp(200px, 90vw, 400px); 
+/* Small mobile */
+@media (max-width: 500px) {
+  .illustration {
+    max-width: 350px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 360px) {
+  .illustration {
+    max-width: 300px;
   }
 }
 
