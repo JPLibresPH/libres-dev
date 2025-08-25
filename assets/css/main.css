@@ -634,8 +634,6 @@ section,
   width: var(--illustrator-size);
   height: auto;
 	margin: 0 auto;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
  .hover {
