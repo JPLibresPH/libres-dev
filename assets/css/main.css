@@ -693,16 +693,8 @@ section,
 /*--- SVG ---*/
 :root{
   --illustrator-size: clamp(300px, 100%, 400px);
-  --illustrator-size: clamp(300px, 100%, 400px);
 }
 
-.hero-section .col-12.col-md-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-section .illustration {
 .hero-section .col-12.col-md-4 {
   display: flex;
   justify-content: center;
@@ -712,11 +704,6 @@ section,
 .hero-section .illustration {
   width: var(--illustrator-size);
   height: auto;
-  margin: 0 auto;
-  display: block;
-  position: static;
-  transform: none;
-  top: auto;
   margin: 0 auto;
   display: block;
   position: static;
