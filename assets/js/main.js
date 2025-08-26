@@ -168,8 +168,6 @@
     { id: "skill-2", text: "Critical Thinking" },
     { id: "skill-3", text: "Adaptability" },
     { id: "skill-4", text: "Organization Skills" },
-    { id: "skill-5", text: "Team Player" },
-    { id: "skill-6", text: "Time Management" }
   ];
 
   const options = {
@@ -291,8 +289,29 @@
     charts.forEach(chart => observer.observe(chart));
   });
 
-  
+   /**
+   * Email
+   */
 
+    window.onload = function() {
+    const form = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      formStatus.innerHTML = `<div class="alert alert-info">Sending...</div>`;
+
+      emailjs.sendForm('service_7eviwk8', 'template_gy82mdv', form)
+        .then(() => {
+          formStatus.innerHTML = `<div class="alert alert-success">Message sent successfully!</div>`;
+          form.reset();
+        })
+        .catch((error) => {
+          formStatus.innerHTML = `<div class="alert alert-danger">Error sending message: ${error.text}</div>`;
+        });
+    });
+  };
+  
   /**
    * Navmenu Scrollspy
    */

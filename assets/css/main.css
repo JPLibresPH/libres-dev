@@ -2,53 +2,53 @@
 /* Fonts */
 @font-face { 
   font-family: cocobold;
-  src: url(../fonts/Coco-Sharp-Bold-trial.woff);
+  src: url(../fonts/Coco-Sharp-Bold-trial.woff) format("woff");
 } 
 @font-face { 
   font-family: cocosharp;
-  src: url(../fonts/Coco-Sharp-Heavy-trial.woff);
+  src: url(../fonts/Coco-Sharp-Heavy-trial.woff) format("woff");
 }
 @font-face { 
   font-family: cocolight;
-  src: url(../fonts/Coco-Sharp-Light-trial.woff);
+  src: url(../fonts/Coco-Sharp-Light-trial.woff) format("woff");
 } 
 @font-face { 
   font-family: unagoblack;
-  src: url(../fonts/Unageo-Black.woff);
+  src: url(../fonts/Unageo-Black.woff) format("woff");
 }   
 @font-face { 
   font-family: unagobold;
-  src: url(../fonts/Unageo-Bold.woff);
+  src: url(../fonts/Unageo-Bold.woff) format("woff");
 } 
 @font-face { 
   font-family: unagoregular;
-  src: url(../fonts/Unageo-Regular.woff);
+  src: url(../fonts/Unageo-Regular.woff)  format("woff");
 }     
 @font-face { 
   font-family: lemonmilkbold;
-  src: url(../fonts/lemonmilk-bold.woff);
+  src: url(../fonts/lemonmilk-bold.woff) format("woff");
 } 
 
 @font-face { 
   font-family: lemonmilkmid;
-  src: url(../fonts/lemonmilk-medium-webfont.woff);
+  src: url(../fonts/lemonmilk-medium-webfont.woff) format("woff");
 } 
 
 @font-face { 
   font-family: akira;
-  src: url(../fonts/Akira-Expanded-Demo.woff);
+  src: url(../fonts/Akira-Expanded-Demo.woff) format("woff");
 } 
 @font-face { 
   font-family: Brigends;
-  src: url(../fonts/Brigends.woff);
+  src: url(../fonts/Brigends.woff) format("woff");
 } 
 @font-face { 
   font-family: Bebas;
-  src: url(../fonts/BebasNeue-Regular.woff);
+  src: url(../fonts/BebasNeue-Regular.woff) format("woff");
 } 
 @font-face { 
   font-family: Consolas;
-  src: url(../fonts/CONSOLA.woff);
+  src: url(../fonts/CONSOLA.woff) format("woff");
 } 
 
 :root {
@@ -76,8 +76,6 @@
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #3c3c3c; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
-
-
 
 .light-background {
   --background-color: #f9f9f9;
@@ -117,12 +115,7 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-family:"cocobold", Helvetica, sans-serif;
 }
@@ -203,10 +196,8 @@ h6 {
 }
 .header.header-show {
   left: 0;
-  background: rgba(255, 255, 255, 0.17);
+  background: rgba(255, 255, 255, 0.116);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(0px);
 }
 
 .header .header-toggle {
@@ -225,11 +216,31 @@ h6 {
   right: 15px;
   z-index: 9999;
   transition: background-color 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
 }
 
 .header .header-toggle:hover {
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .mobile-logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .mobile-logo img {
+    max-width: 55px;  /* adjust size */
+    height: auto;
+   
+  }
 }
 
 
@@ -308,6 +319,10 @@ h6 {
   display: block;
 }
 
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
 .footer {
   color: var(--default-color);
 background-image: url(../background/about-section.png);
@@ -371,6 +386,9 @@ backdrop-filter: blur(6.4px);
   padding-top: 5px;
 }
 
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
 #preloader {
   position: fixed;
   inset: 0;
@@ -393,7 +411,6 @@ backdrop-filter: blur(6.4px);
   animation: animate-preloader 1.5s linear infinite;
 }
 
-
 .preloader-logo {
   width: 50px;
   height: auto;
@@ -405,7 +422,9 @@ backdrop-filter: blur(6.4px);
   100% { transform: rotate(360deg); }
 }
 
-
+/*--------------------------------------------------------------
+# Scroll-top
+--------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
   visibility: hidden;
@@ -444,6 +463,9 @@ backdrop-filter: blur(6.4px);
   }
 }
 
+/*--------------------------------------------------------------
+# Page Title
+--------------------------------------------------------------*/
 .page-title {
   --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   color: var(--default-color);
@@ -490,7 +512,6 @@ section,
   overflow: clip;
 }
 
-
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
@@ -502,14 +523,14 @@ section,
 
 /* Default Style */
 .section-title h2 {
-  font-size: clamp(36px, 5vw, 48px);
+  font-size: clamp(34px, 5vw, 48px);
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
   font-family: 'Dela Gothic One', Helvetica, sans-serif;
+  line-height: 1.05;
 }
-
 
 .section-title h2:before {
   content: "";
@@ -544,17 +565,64 @@ section,
 }
 
 .section-title.white h2:before {
-  background: rgba(255, 255, 255, 0.6); 
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .section-title.white h2::after {
   background: white;
 }
 
-.section-title p {
-  margin-bottom: 0;
-  font-size: 20px;
+@media (max-width: 599px) {
+  .section-title h2 {
+    font-size: clamp(20px, 7vw, 28px);
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+
+  .section-title h2:before {
+    width: 100px;
+  }
+
+  .section-title h2::after {
+    width: 40px;
+  }
 }
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .section-title h2 {
+    font-size: clamp(26px, 6vw, 36px);
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+
+  .section-title h2:before {
+    width: 130px;
+  }
+
+  .section-title h2::after {
+    width: 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .section-title h2 {
+    font-size: clamp(34px, 5vw, 48px);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .section-title h2:before {
+    width: 160px;
+  }
+
+  .section-title h2::after {
+    width: 60px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -577,7 +645,6 @@ section,
   object-fit: cover;
   z-index: 1;
 }
-
 
 .hero:before {
   content: "";
@@ -624,16 +691,24 @@ section,
 }
 
 /*--- SVG ---*/
-
 :root{
-  --illustrator-size: clamp(400px, 100%, 450px);
+  --illustrator-size: clamp(300px, 100%, 400px);
 }
 
-.illustration {
-	position: relative;
+.hero-section .col-12.col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .illustration {
   width: var(--illustrator-size);
   height: auto;
-	margin: 0 auto;
+  margin: 0 auto;
+  display: block;
+  position: static;
+  transform: none;
+  top: auto;
 }
 
  .hover {
@@ -717,27 +792,7 @@ section,
 	 animation-delay: 626ms;
 	 animation-fill-mode: forwards;
 }
- .text-eleven {
-	 transform: translateY(-120px) translateZ(0);
-	 opacity: 0;
-	 animation: fadeNumberDown-120 5208ms ease-in-out infinite;
-	 animation-delay: 1277ms;
-	 animation-fill-mode: forwards;
-}
- .text-twelve {
-	 transform: translateY(-150px) translateZ(0);
-	 opacity: 0;
-	 animation: fadeNumberDown-150 2028ms ease-in-out infinite;
-	 animation-delay: 3441ms;
-	 animation-fill-mode: forwards;
-}
- .text-thirteen {
-	 transform: translateY(-10px) translateZ(0);
-	 opacity: 0;
-	 animation: fadeNumberDown-160 5923ms ease-in-out infinite;
-	 animation-delay: 1108ms;
-	 animation-fill-mode: forwards;
-}
+
  @keyframes hover {
 	 0% {
 		 transform: translateY(0);
@@ -962,10 +1017,20 @@ section,
 }
  
 @media (max-width: 768px) {
+  .illustration {
+    max-width: 400px;
+  }
+}
 
-  .hover {
-    margin-top: 60px;
-    --illustrator-size: clamp(200px, 90vw, 400px); 
+@media (max-width: 500px) {
+  .illustration {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 360px) {
+  .illustration {
+    max-width: 300px;
   }
 }
 
@@ -1002,7 +1067,7 @@ section,
   position: absolute;
   inset: 0;
   overflow: hidden;
-  border-radius: inherit; /* copies the animated border radius */
+  border-radius: inherit;
    z-index: 1; 
 }
 
@@ -1049,8 +1114,6 @@ section,
   animation-duration: 3s;
   animation-delay: 0.3s;
 }
-
-
 
 @keyframes blob {
   0% {
@@ -1107,8 +1170,6 @@ section,
   }
 }
 
-
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1134,7 +1195,6 @@ section,
   line-height: 2;
   padding: 0 10px;
 }
-
 
 .about .content ul li {
   margin-bottom: 10px;
@@ -1203,8 +1263,6 @@ section,
   display: block;
 }
 
-
-
 .profile .profile-title {
   font-weight: 700;
   margin-top: 20px;
@@ -1230,7 +1288,7 @@ section,
 .profile .profile-item::before {
   content: "";
   position: absolute;
-  left: -2px; /* aligns with border */
+  left: -2px;
   top: 0;
   bottom: 0;
   width: 5px;
@@ -1264,7 +1322,6 @@ section,
   animation-timing-function: ease-in-out;
   border: 0px;
 }
-
 
 .profile .profile-item h4 {
   line-height: 18px;
@@ -1311,7 +1368,6 @@ section,
   background: var(--background-color);
 }
 
-
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
@@ -1352,7 +1408,6 @@ section,
   margin-left: 8px;
   font-weight: bold;
 }
-
 
 .skills .progress {
   height: 50px;
@@ -1403,7 +1458,6 @@ section,
     background-position: 0% 50%;
   }
 }
-
 
 .skills .skill-item {
 height: 100%;
@@ -1567,7 +1621,6 @@ backdrop-filter: blur(3px);
 /*--------------------------------------------------------------
 # Cert-Skills Section
 --------------------------------------------------------------*/
-
 .cert-card {
   border-radius: 22.2px;
   overflow: hidden; 
@@ -1661,7 +1714,6 @@ backdrop-filter: blur(3px);
   transition: color 0.3s ease;
   color: #3C3C3C;
 }
-
 
 /*--------------------------------------------------------------
 # Portfolio Section
@@ -1808,10 +1860,10 @@ backdrop-filter: blur(3px);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .contact .info-item {
-padding: 30px;
-margin-top: 40px;
-margin-bottom: 40px; 
+padding: 20px;
+margin-bottom: 20px; 
 background: rgba(255, 255, 255, 0.32);
 border-radius: 22.2px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -1847,8 +1899,60 @@ backdrop-filter: blur(6.4px);
 }
 
 .contact .info-item:hover i {
+  cursor: pointer;
   background: var(--accent-color);
   color: var(--contrast-color);
+}
+
+.contact .php-email-form {
+  height: 100%;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 14px;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 14px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+
+.contact .php-email-form {
+  padding: 40px 30px 40px 30px;
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 22.2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
 }
 
 
@@ -2187,7 +2291,7 @@ border-radius: 25px;
 }
 
 .buttongo {
-  min-width: 9rem; /* relative unit instead of px */
+  min-width: 9rem;
   min-height: 2rem;
   font-size: 0.8rem;
   font-family: "unagoregular", Helvetica, sans-serif;
@@ -2259,7 +2363,7 @@ border-radius: 25px;
   }
 }
 
-@media (max-width: 480px) { /* mobile, e.g., iPhone 15 */
+@media (max-width: 480px) {
   .buttongo {
     min-width: 5rem;
     min-height: 1rem;
@@ -2273,6 +2377,9 @@ border-radius: 25px;
 }
 
 
+/*--------------------------------------------------------------
+# Divider/Ticker
+--------------------------------------------------------------*/
 
  @-webkit-keyframes ticker {
   0% {
@@ -2329,6 +2436,9 @@ border-radius: 25px;
   color: rgb(100, 100, 100);
 }
 
+/*--------------------------------------------------------------
+# Circle
+--------------------------------------------------------------*/
 
 .circle {
 	position: relative;
@@ -2348,7 +2458,6 @@ border-radius: 25px;
 	border-radius: 100vmax;
 	z-index: 2;
 }
-
 
 .text {
 	position: relative;
@@ -2373,6 +2482,10 @@ border-radius: 25px;
 	transform-origin: 0 50px; /* Adjust to new radius */
 }
 
+/*--------------------------------------------------------------
+# Box
+--------------------------------------------------------------*/
+
 .box {
 	--main-bg: conic-gradient(from var(--border-angle), rgb(255, 255, 255), rgb(255, 255, 255) 5%, rgb(255, 255, 255) 5%, rgb(255, 255, 255) 5%);
 	border: solid 3px transparent;
@@ -2393,6 +2506,9 @@ border-radius: 25px;
 	 initial-value: 0turn;
 }
  
+/*--------------------------------------------------------------
+# Vert
+--------------------------------------------------------------*/
  
 .vert-move-down {
   -webkit-animation: mover 1s infinite  alternate;
@@ -2448,21 +2564,3 @@ border-radius: 25px;
   0%   { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
-
-
-.custom-shape-divider-top-1756036924 {
-   
-    margin-top: -60px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1756036924 svg {
-    position: relative;
-    display: block;
-    width: calc(147% + 1.3px);
-    height: 209px;
-}
-
