@@ -131,8 +131,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header.header-show {
   left: 0;
-  background: rgba(255, 255, 255, 0.479);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(35px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .header .header-toggle {
@@ -257,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   color: var(--default-color);
-  background-image: url(../background/profile-section.png);
+  background-image: url(../background/profile-section.webp);
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 14px;
@@ -1081,7 +1082,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about-section{
-  background-image: url(../background/about-section.png);
+  background-image: url(../background/about-section.webp);
    background-size: cover;      
   background-repeat: no-repeat; 
   background-position: center;
@@ -1165,7 +1166,7 @@ section,
 # Profile Section
 --------------------------------------------------------------*/
 .profile-section{
-  background-image: url(../background/profile-section.png);
+  background-image: url(../background/profile-section.webp);
   background-size: cover;      
   background-repeat: no-repeat; 
   background-position: center;
@@ -1291,11 +1292,17 @@ section,
 --------------------------------------------------------------*/
 
 .skills-section{
-  background-image: url(../background/skills-section.png);
+  background-image: url(../background/skills-section.webp);
    background-size: cover;      
   background-repeat: no-repeat; 
   background-position: center;
   
+}
+
+@media (max-width: 500px) {
+  #skills .section-title.white h2 {
+    color: #3c3c3c;
+  }
 }
 
 .skill-title {
@@ -1482,7 +1489,6 @@ section,
   transform: translateY(0);
 }
 
-
  .li-1:hover .name {
 	 visibility: visible !important;
 }
@@ -1528,9 +1534,12 @@ section,
  .li-15:hover .name {
 	 visibility: visible !important;
 }
- 
 
-
+@media (max-width: 500px) {
+  .dock span {
+    display: none;
+  }
+}
 .skills .skill-item {
   height: 100%;
   padding: 30px 30px;
@@ -1702,7 +1711,7 @@ section,
 # Cert-Skills Section
 --------------------------------------------------------------*/
 .cert-section{
-  background-image: url(../background/cert-section.png);
+  background-image: url(../background/cert-section.webp);
   background-size: cover;      
   background-repeat: no-repeat; 
   background-position: center;
@@ -2121,11 +2130,13 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact-section{
-  background-image: url(../background/artwork-2.png);
+  background-image: url(../background/artwork-2.webp);
   background-size: cover;      
   background-repeat: no-repeat; 
   background-position: center;
 }
+
+
 
 .contact .info-item {
   padding: 20px;
