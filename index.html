@@ -20,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -74,7 +77,7 @@
             <!-- Title Name -->
             <div class="col-12 col-md-8 text-md-start text-center">
               <div class="circle">
-                <img class="logo" src="assets/img/my_logo-2.png" alt="">
+                <img class="logo" src="assets/img/my_logo-2.png" alt="my_logo">
                 <div class="text">
                   <p> DEVELOPMENT • CREATING • DESIGNS <span>•</span></p>
                 </div>
@@ -711,19 +714,19 @@
               <!-- Two Containers -->
               <div class="row gy-4">
                 <div class="col-md-6" data-aos="fade-right" data-aos-delay="250">
-                  <div class="info-item box">
+                  <div class="box">
                     <h4 class="mb-3">Best Skills On:</h4>
                     <div class="d-flex justify-content-center flex-wrap gap-3">
-                      <img src="assets/img/tech-logo/HTML.png" alt="HTML" class="vert-move-1" style="height: 55px; border-radius: 15px;">
-                      <img src="assets/img/tech-logo/CSS.png" alt="CSS" class="vert-move-2" style="height:55px; border-radius: 15px;">
-                      <img src="assets/img/tech-logo/Bootstrap.png" alt="Bootstrap" class="vert-move-3" style="height:55px; border-radius: 15px;">
-                      <img src="assets/img/tech-logo/PS.png" alt="Photshop" class="vert-move-4" style="height:55px; border-radius: 15px;">
-                      <img src="assets/img/tech-logo/AI.png" alt="Illustrator" class="vert-move-5" style="height:55px; border-radius: 15px;">
+                      <img src="assets/img/tech-logo/HTML.png" alt="HTML" class="vert-move-1" style="height: clamp(42px, 5vw, 55px);">
+                      <img src="assets/img/tech-logo/CSS.png" alt="CSS" class="vert-move-2" style="height: clamp(42px, 5vw, 55px);">
+                      <img src="assets/img/tech-logo/Bootstrap.png" alt="Bootstrap" class="vert-move-3" style="height: clamp(42px, 5vw, 55px);">
+                      <img src="assets/img/tech-logo/PS.png" alt="Photshop" class="vert-move-4" style="height: clamp(42px, 5vw, 55px);">
+                      <img src="assets/img/tech-logo/AI.png" alt="Illustrator" class="vert-move-5" style="height: clamp(42px, 5vw, 55px);">
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
-                  <div class="info-item box">
+                  <div class="box">
                     <h4 class="mb-3">Other Interests:</h4>
                     <div class="d-flex justify-content-center flex-wrap gap-3">
                       <div class="about-interest vert-move-1">
@@ -772,7 +775,7 @@
               </div>
               <!-- End profile Item -->
 
-              <div class="profile-item"data-aos="fade-up" data-aos-delay="300">
+              <div class="profile-item"data-aos="fade-up" data-aos-delay="250">
                 <h4> Senior High School</h4>
                 <h5>University of the East - Manila | <span class="year">2018 - 2020</span></h5>
                 <ul>
@@ -788,12 +791,12 @@
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <h4 class="profile-title" style="color: #f1f1f1;">PROFESSIONAL EXPERIENCE</h4>
               <div class="profile-item"data-aos="fade-up" data-aos-delay="300">
-                <h4>IT Support & Development - IT Intern </h4>
+                <h4>IT Support & Development - Internship </h4>
                 <h5>The Philippine Inquirer Inc. | Feb 2025 - May 2025</h5>
                 <p><em>Chino Roces Ave., Makati</em></p>
                 <ul>
                   <li>Monitored daily newspaper page counts and assisted with the setup of work-from-home computers, ensuring smooth IT operations in a fast-paced media environment.</li>
-                  <li>Supported network configuration and system management tasks, including issue resolution, file-sharing setup, and participation in technical seminars such as Sophos Firewall.</li>
+                  <li>Supported network configuration and system management tasks, including issue resolution, file-sharing setup. </li>
                   <li>Contributed to the testing and development of an AI server using tools like Whisper AI and Fireflies AI; configured a sample AI server using WSL (Linux), demonstrating adaptability and foundational knowledge in AI infrastructure.</li>
                   <li>Assisted in developing a custom Inventory System in AppSheet with multi-item deployment, auto-generated PDFs, and real-time stock tracking to improve IT resource accuracy and efficiency through a no-code platform.</li>
                 </ul>
@@ -837,7 +840,7 @@
       <section id="skills" class="skills section skills-section">
 
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title white" data-aos="fade-up">
           <h2>WHAT I DO?</h2>
         </div>
         
@@ -848,159 +851,123 @@
           <div class="row gy-4 skills-animation isotope-container" data-aos="fade-up" data-aos-delay="50">
               
             <!-- WebDev and Programming Card -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="skill-item item-red position-relative">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-item item-cyan position-relative">
                 <div class="icon">
-                  <svg width="75" height="75" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#f5f5f5" stroke="none" d="M582,300 A282,282 0 1,1 18,300 A282,282 0 1,1 582,300Z"/>
-                  </svg>
                   <i class="bi bi-code-slash"></i>
                 </div>
-                <h3>Web Dev and Programming</h3>
+                <h3>Web Development</h3>
                 <div class="skill-list">
-                  <div class="progress">
-                    <span class="skill"><span>HTML</span> <i class="val">90%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>CSS</span> <i class="val">85%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>JavaScript</span> <i class="val">60%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>Bootstrap</span> <i class="val">75%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>Tailwind CSS</span> <i class="val">60%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-                  
+                  <p>I worked with HTML, CSS, and JavaScript to build responsive, and functional websites across different devices.</p>
                 </div>
               </div>
             </div>
             <!-- End Skill Item -->
 
             <!-- Creative Design Card -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="skill-item item-orange position-relative">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="skill-item item-orange  position-relative">
                 <div class="icon">
-                  <svg width="75" height="75" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#f5f5f5" stroke="none" d="M582,300 A282,282 0 1,1 18,300 A282,282 0 1,1 582,300Z"/>
-                  </svg>
-                  <i class="bi bi-palette"></i>
+                  <i class="bi bi-front"></i>
                 </div>
-                <h3>Creative Design</h3>
+                <h3>Web Design</h3>
                 <div class="skill-list">
-                  <div class="progress">
-                    <span class="skill"><span>Photoshop</span> <i class="val">90%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>Illustrator</span> <i class="val">80%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>XD</span> <i class="val">80%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>Figma</span> <i class="val">75%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>Blender</span> <i class="val">85%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-                  
+                  <p>I used Adobe XD and Figma to create clean layouts and user-friendly designs, focusing on accessibility and visual appeal.</p>
                 </div>
               </div>
             </div>
 
             <!-- Tech Support and Others -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="skill-item item-teal position-relative">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="skill-item item-red position-relative">
                 <div class="icon">
-                  <svg width="75" height="75" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#f5f5f5" stroke="none" d="M582,300 A282,282 0 1,1 18,300 A282,282 0 1,1 582,300Z"/>
-                  </svg>
-                  <i class="bi bi-tools"></i>
+                  <i class="bi bi-palette"></i>
                 </div>
-                <h3>Tech Support and Others</h3>
+                <h3>Graphic Design</h3>
                 <div class="skill-list">
-                  <div class="progress">
-                    <span class="skill"><span>Hardware</span> <i class="val">90%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>Software</span> <i class="val">80%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>Troubleshooting</span> <i class="val">70%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>Basic Configuration</span> <i class="val">70%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>OS Installation</span> <i class="val">70%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-                  
+                  <p>I designed logos, banners, and digital assets that strengthened brand identity and enhanced user engagement.</p>
                 </div>
               </div>
             </div><!-- End Skill Item -->
+            
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
+              <div class="skill-item item-teal position-relative">
+                <div class="icon">
+                  <i class="bi bi-tools"></i>
+                </div>
+                <h3>Technical Support</h3>
+                <div class="skill-list">
+                  <p>I provided technical assistance, troubleshooting for hardware, software, and web-related issues to ensure smooth operations.</p> 
+                </div>
+              </div>
+            </div><!-- End Skill Item -->
+            
+            <!-- Design Tools -->
+            <div class="col-lg-12 col-md-6 align-items-center" data-aos="fade-up" data-aos-delay="900">
+              <div class="skill-tools item-dark position-relative">
+                <div class="dock">
+                  <span style="color: #999;">|</span>
+                  <h3 style="margin: 0;">Software Tools </h3>
+                  <span style="color: #999;">|</span>
+                  <div class="dock-container">
+                    <li class="li-1">
+                      <div class="name">HTML</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/HTML.png" alt="">
+                    </li>
+                    <li class="li-2">
+                      <div class="name">CSS</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/CSS.png" alt="">
+                    </li>
+                    <li class="li-3">
+                      <div class="name">JavaScript</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/JS.png" alt="">
+                    </li>
+                    <li class="li-4">
+                      <div class="name">Bootstrap</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/Bootstrap.png" alt="">
+                    </li>
+                    <li class="li-5">
+                      <div class="name">Tailwind CSS</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/Tailwind_CSS_Logo.svg.png" alt="">
+                    </li>
+                    <li class="li-6">
+                      <div class="name">Photoshop</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/PS.png" alt="">
+                    </li>
+                    <li class="li-7">
+                      <div class="name">Illustrator</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/AI.png" alt="">
+                    </li>
+                    <li class="li-8">
+                      <div class="name">Premiere Pro</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/PR.png" alt="">
+                    </li>
+                    <li class="li-9">
+                      <div class="name">Figma</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/XD.png" alt="">
+                    </li>
+                    <li class="li-10">
+                      <div class="name">Adobe XD</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/Figma.png" alt="">
+                    </li>
+                    <li class="li-11">
+                      <div class="name">Canva</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/Canva.png" alt="">
+                    </li>
+                    <li class="li-12">
+                      <div class="name">Blender 3D</div>
+                      <img class="ico" src="assets/img/tech-logo/tools/Blender_logo_no_text.svg.png" alt="">
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        
+      </section>
 
-        <!-- Soft-skills Section -->
+        <!-- Soft-skills Section 
         <section id="soft-skills" class="soft-skills section about-section">
           <div class="container" data-aos="fade-up">
             <div class="row gy-4">
@@ -1030,12 +997,12 @@
               </div>
             </div>
           </div>
-        </section>
+        </section>-->
 
         <!-- Cert-Skills Section -->
-        <section id="cert-skills" class="section about-section">
+        <section id="cert-skills" class="cert-section">
           
-          <div class="container section-title" data-aos="fade-up">
+          <div class="container section-title white" data-aos="fade-up">
             <h2>CERTIFICATIONS</h2>
           </div>
           
@@ -1043,7 +1010,7 @@
           <div id="carouselMultiItemExample" data-mdb-carousel-init class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
           
             <!-- Inner -->
-            <div class="carousel-inner pb-5">
+            <div class="carousel-inner pb-3">
               
               <!-- First Cards -->
               <div class="carousel-item active">
@@ -1054,13 +1021,17 @@
                         <img src="assets/img/Course-Certs/LIBRES-CERTIFICATE-HTML-AND-CSS-1.png" class="card-img-top" alt="Certiport-1"/>
                         <div class="card-body d-flex flex-column">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/tech-logo/workspace_premium_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Cert Icon" class="cert-icon vert-move-1 me-2"> 
+                            <img src="assets/img/tech-logo/course.svg" alt="Cert Icon" class="cert-icon vert-move-1 me-2"> 
                             <h5 class="card-title mb-0">IT Specialist - HTML and CSS</h5>
                           </div>
                         </div>
                         <div class="card-body-button">
-                          <div class="sub-card-title"><i>Certiport Certificate</i></div>
-                          <a href="#!" class="btn cert-button"><i class="bi bi-share"></i> More info</a>
+                          <div class="sub-card-group">
+                            <div class="sub-card-title"><i>Certiport Certificate</i></div>
+                          </div>
+                          <a target="_blank" href="https://www.credly.com/badges/88031d99-085e-46e1-b50f-141e090d00c9/linked_in_profile" class="btn card-button">
+                            <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1070,13 +1041,17 @@
                         <img src="assets/img/Course-Certs/LIBRES-CERTIFICATE-HTML5-APPLICATION-DEVELOPMENT-1.png"class="card-img-top" alt="Certiport-2"/>
                         <div class="card-body d-flex flex-column">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/tech-logo/workspace_premium_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Cert Icon" class="cert-icon vert-move-2 me-2"> 
-                            <h5 class="card-title mb-0">IT Specialist - HTML5 AppDev</h5>
+                            <img src="assets/img/tech-logo/course.svg" alt="Cert Icon" class="cert-icon vert-move-2 me-2"> 
+                            <h5 class="card-title mb-0">IT Specialist - HTML AppDev</h5>
                           </div>
                         </div>
                         <div class="card-body-button">
-                          <div class="sub-card-title"><i>Certiport Certificate</i></div>
-                          <a href="#!" class="btn cert-button"><i class="bi bi-share"></i> More info</a>
+                          <div class="sub-card-group">
+                            <div class="sub-card-title"><i>Certiport Certificate</i></div>
+                          </div>
+                          <a target="_blank" href="https://www.credly.com/badges/fbd417fc-fe3a-41f1-b8d8-d0537671fa7c/linked_in_profile" class="btn card-button">
+                            <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1086,13 +1061,17 @@
                         <img src="assets/img/Course-Certs/Coursera Z2AW6ZMYL17H-1.png" class="card-img-top" alt="Google-Cert-1"/>
                         <div class="card-body d-flex flex-column">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/tech-logo/workspace_premium_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Cert Icon" class="cert-icon vert-move-3 me-2"> 
+                            <img src="assets/img/tech-logo/course.svg" alt="Cert Icon" class="cert-icon vert-move-3 me-2"> 
                             <h5 class="card-title mb-0">Foundations of (UX) Design</h5>
                           </div>
                         </div>
                         <div class="card-body-button">
-                          <div class="sub-card-title"><i>Google Certificate</i></div>
-                          <a href="#!" class="btn cert-button"><i class="bi bi-share"></i> More info</a>
+                          <div class="sub-card-group">
+                            <div class="sub-card-title"><i>Google Certificate</i></div>
+                          </div>
+                          <a target="_blank" href="https://coursera.org/verify/Z2AW6ZMYL17H" class="btn card-button">
+                            <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1109,13 +1088,17 @@
                         <img src="assets/img/Course-Certs/Coursera QVAE4UUHTVBA-1.png" class="card-img-top" alt="Google-Cert-2"/>
                         <div class="card-body d-flex flex-column">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/tech-logo/workspace_premium_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Cert Icon" class="cert-icon vert-move-1 me-2"> 
+                            <img src="assets/img/tech-logo/course.svg" alt="Cert Icon" class="cert-icon vert-move-1 me-2"> 
                             <h5 class="card-title mb-0">Tech Support Fundamentals</h5>
                           </div>
                         </div>
                         <div class="card-body-button">
-                          <div class="sub-card-title"><i>Google Certificate</i></div>
-                          <a href="#!" class="btn cert-button"><i class="bi bi-share"></i> More info</a>
+                          <div class="sub-card-group">
+                            <div class="sub-card-title"><i>Google Certificate</i></div>
+                          </div>
+                          <a target="_blank" href="https://coursera.org/verify/QVAE4UUHTVBA" class="btn card-button">
+                            <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1125,13 +1108,17 @@
                         <img src="assets/img/Course-Certs/LIBRES-1ST-FREECODECAMP.png" class="card-img-top" alt="FreeCodeCamp-1"/>
                         <div class="card-body d-flex flex-column">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/tech-logo/workspace_premium_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Cert Icon" class="cert-icon vert-move-2 me-2"> 
+                            <img src="assets/img/tech-logo/course.svg" alt="Cert Icon" class="cert-icon vert-move-2 me-2"> 
                             <h5 class="card-title mb-0">Responsive Web Design</h5>
                           </div>
                         </div>
                         <div class="card-body-button">
-                          <div class="sub-card-title"><i>FreeCodeCamp</i></div>
-                          <a href="#!" class="btn cert-button"><i class="bi bi-share"></i> More info</a>
+                          <div class="sub-card-group">
+                            <div class="sub-card-title"><i>FreeCodeCamp</i></div>
+                          </div>
+                          <a  target="_blank" href="https://www.freecodecamp.org/certification/jahredlibres12/responsive-web-design" class="btn card-button">
+                            <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1141,13 +1128,17 @@
                         <img src="assets/img/Course-Certs/LIBRES-2ND-FREECODECAMP.png" class="card-img-top" alt="FreeCodeCamp-2"/>
                         <div class="card-body d-flex flex-column">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/tech-logo/workspace_premium_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Cert Icon" class="cert-icon vert-move-3 me-2"> 
+                            <img src="assets/img/tech-logo/course.svg" alt="Cert Icon" class="cert-icon vert-move-3 me-2"> 
                             <h5 class="card-title mb-0">Front End Dev Libraries</h5>
                           </div>
                         </div>
                         <div class="card-body-button">
-                          <div class="sub-card-title"><i>FreeCodeCamp</i></div>
-                          <a href="#!" class="btn cert-button"><i class="bi bi-share"></i> More info</a>
+                          <div class="sub-card-group">
+                            <div class="sub-card-title"><i>FreeCodeCamp</i></div>
+                          </div>
+                          <a target="_blank" href="https://www.freecodecamp.org/certification/jahredlibres12/front-end-development-libraries" class="btn card-button">
+                            <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1164,13 +1155,17 @@
                         <img src="assets/img/Course-Certs/G-LEARNING-FRONTEND-DEVELOPMENT-HTML-1.png" class="card-img-top" alt="G-Learning-1"/>
                         <div class="card-body d-flex flex-column">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/tech-logo/workspace_premium_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Cert Icon" class="cert-icon vert-move-1 me-2"> 
-                            <h5 class="card-title mb-0">Front End Dev- HTML</h5>
+                            <img src="assets/img/tech-logo/course.svg" alt="Cert Icon" class="cert-icon vert-move-1 me-2"> 
+                            <h5 class="card-title mb-0">Front End Dev - HTML</h5>
                           </div>
                         </div>
                         <div class="card-body-button">
-                          <div class="sub-card-title"><i>Great Learning </i></div>
-                          <a href="#!" class="btn cert-button"><i class="bi bi-share"></i> More info</a>
+                          <div class="sub-card-group">
+                            <div class="sub-card-title"><i>Great Learning</i></div>
+                          </div>
+                          <a target="_blank" href="https://www.mygreatlearning.com/certificate/MIVLVRTF" class="btn card-button">
+                            <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1180,13 +1175,17 @@
                         <img src="assets/img/Course-Certs/G-LEARNING-FRONTEND-DEVELOPMENT-CSS-1.png" class="card-img-top" alt="G-Learning-2"/>
                         <div class="card-body d-flex flex-column">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/tech-logo/workspace_premium_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Cert Icon" class="cert-icon vert-move-2 me-2"> 
+                            <img src="assets/img/tech-logo/course.svg" alt="Cert Icon" class="cert-icon vert-move-2 me-2"> 
                             <h5 class="card-title mb-0">Front End Dev - CSS</h5>
                           </div>
                         </div>
                         <div class="card-body-button">
-                          <div class="sub-card-title"><i>Great Learning </i></div>
-                          <a href="#!" class="btn cert-button"><i class="bi bi-share"></i> More info</a>
+                          <div class="sub-card-group">
+                            <div class="sub-card-title"><i>Great Learning</i></div>
+                          </div>
+                          <a target="_blank" href="https://www.mygreatlearning.com/certificate/ZTKCDLNQ" class="btn card-button">
+                            <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1196,13 +1195,17 @@
                         <img src="assets/img/Course-Certs/G-LEARNING-JAVASCRIPT-PROJECTS-1.png" class="card-img-top" alt="G-Learning-3"/>
                         <div class="card-body d-flex flex-column">
                           <div class="d-flex align-items-center">
-                            <img src="assets/img/tech-logo/workspace_premium_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Cert Icon" class="cert-icon vert-move-3 me-2"> 
+                            <img src="assets/img/tech-logo/course.svg" alt="Cert Icon" class="cert-icon vert-move-3 me-2"> 
                             <h5 class="card-title mb-0">JavaScript Projects</h5>
                           </div>
                         </div>
                         <div class="card-body-button">
-                          <div class="sub-card-title"><i>Great Learning </i></div>
-                          <a href="#!" class="btn cert-button"><i class="bi bi-share"></i> More info</a>
+                          <div class="sub-card-group">
+                            <div class="sub-card-title"><i>Great Learning</i></div>
+                          </div>
+                          <a target="_blank" href="https://www.mygreatlearning.com/certificate/CWKESERY" class="btn card-button">
+                            <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -1225,7 +1228,6 @@
             </div>
           </div>
         </section> <!--/Cert-Skills Section -->
-      </section><!-- /skills Section -->
 
       <!-- Divider -->
       <div class="ticker-wrap">
@@ -1250,33 +1252,156 @@
             <span style="margin: 0px 10px 0px 5px"><img src="assets/img/favicon_io/alternative-favicon-32x32.png"></span>JAHRED LIBRES
             <span style="margin: 0px 10px 0px 5px"><img src="assets/img/favicon_io/alternative-favicon-32x32.png"></span>PORTFOLIO
           </div>
+          <div class="ticker__item"><span style="margin: 0px 10px 0px 5px"><img src="assets/img/favicon_io/alternative-favicon-32x32.png"></span>JAHRED LIBRES
+            <span style="margin: 0px 10px 0px 5px"><img src="assets/img/favicon_io/alternative-favicon-32x32.png"></span>PORTFOLIO
+            <span style="margin: 0px 10px 0px 5px"><img src="assets/img/favicon_io/alternative-favicon-32x32.png"></span>JAHRED LIBRES
+            <span style="margin: 0px 10px 0px 5px"><img src="assets/img/favicon_io/alternative-favicon-32x32.png"></span>PORTFOLIO
+          </div>
         </div>
       </div>
       <!-- /Divider -->
 
       <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section profile-section">
+      <section id="portfolio" class="portfolio section portfolio-section">
 
         <!-- Section Title -->
         <div class="container section-title white" data-aos="fade-up">
-          <h2 style="color: #ffffff;">PROJECTS</h2>
+          <h2>PROJECTS</h2>
         </div>
 
         <!-- Container -->
         <div class="container">
 
-          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="isotope-layout" data-default-filter=".filter-web" data-layout="masonry" data-sort="original-order">
 
             <!-- Portfolio Filters -->
             <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="50">
-              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-web" class="filter-active"> Web/Mobile</li>
               <li data-filter=".filter-posters">Posters</li>
-              <li data-filter=".filter-web"> Web/Mobile</li>
+              <li data-filter="*">All</li>
             </ul>
 
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
               <!-- Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web ">
+                <div class="card web-card">
+                  <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-15.png" class="web-img-top" alt=""/>
+                  <div class="web-body d-flex flex-column">
+                    <div class="d-flex">
+                      <img src="assets/img/tech-logo/Web.svg" alt="Cert Icon" class="web-icon vert-move-3 me-2"> 
+                      <div>
+                        <h5 class="web-title mb-0">Hindsight Project</h5>
+                        <p>News Archive Website (2023)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="web-body-button">
+                    <div class="web-sub-card-group">
+                      <div class="web-sub-card-title"><i>HTML</i></div>
+                      <div class="web-sub-card-title"><i>CSS</i></div>
+                      <div class="web-sub-card-title"><i>JavaScript</i></div>
+                    </div>
+                    <a target="_blank" href="https://tk6gnkg2ta44i9pb4kzf7g.on.drv.tw/GROUP3_ITAD_MARCELO/" class="btn web-button">
+                      <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web ">
+                <div class="card web-card">
+                  <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-16.png" class="web-img-top" alt=""/>
+                  <div class="web-body d-flex flex-column">
+                    <div class="d-flex">
+                      <img src="assets/img/tech-logo/Web.svg" alt="Cert Icon" class="web-icon vert-move-3 me-2"> 
+                      <div>
+                        <h5 class="web-title mb-0">I.T. Skills Olympics</h5>
+                        <p>Web Design Competition (2023)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="web-body-button">
+                    <div class="web-sub-card-group">
+                      <div class="web-sub-card-title"><i>HTML</i></div>
+                      <div class="web-sub-card-title"><i>CSS</i></div>
+                    </div>
+                    <a target="_blank" href="https://zyzlmz2pkiluhbwok2ssga.on.drv.tw/LIBRES%2C%20JAHRED%20P-UE-MANILA/LIBRES-UE/" class="btn web-button">
+                      <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web ">
+                <div class="card web-card">
+                  <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-14.png" class="web-img-top" alt=""/>
+                  <div class="web-body d-flex flex-column">
+                    <div class="d-flex">
+                      <img src="assets/img/tech-logo/Web.svg" alt="Cert Icon" class="web-icon vert-move-3 me-2"> 
+                      <div>
+                        <h5 class="web-title mb-0">First HTML Page</h5>
+                        <p>Web Portfolio Project (2022)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="web-body-button">
+                    <div class="web-sub-card-group">
+                      <div class="web-sub-card-title"><i>HTML</i></div>
+                      <div class="web-sub-card-title"><i>CSS</i></div>
+                    </div>
+                    <a target="_blank" href="https://gx6wuoc3l64t9fvvuuonig.on.drv.tw/LIBRES.FINAL.MIDTERM.HTML.PROJECT/FINAL%20LANDING%20PAGE/html/LIBRES_LANDINGPAGE_ITAD.html" class="btn web-button">
+                      <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+              
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web ">
+                <div class="card web-card">
+                  <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-17.png" class="web-img-top" alt=""/>
+                  <div class="web-body d-flex flex-column">
+                    <div class="d-flex">
+                      <img src="assets/img/tech-logo/Web.svg" alt="Cert Icon" class="web-icon vert-move-3 me-2"> 
+                      <div>
+                        <h5 class="web-title mb-0">Hiyas Press Inc. Printing Management System</h5>
+                        <p>Capstone Project (2024)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="web-body-button">
+                    <div class="web-sub-card-group">
+                      <div class="web-sub-card-title"><i>HTML</i></div>
+                      <div class="web-sub-card-title"><i>CSS</i></div>
+                      <div class="web-sub-card-title"><i>Tailwind</i></div>
+                    </div>
+                    <a target="_blank" href="https://tk6gnkg2ta44i9pb4kzf7g.on.drv.tw/THESIS%20PROTOTYPE%20-%20FRONTEND%20-%20LATEST/login-module.html" class="btn web-button">
+                      <span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web ">
+                <div class="card web-card">
+                  <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-19.png" class="web-img-top" alt=""/>
+                  <div class="web-body d-flex flex-column">
+                    <div class="d-flex">
+                      <img src="assets/img/tech-logo/UX-UI.svg" alt="Cert Icon" class="web-icon vert-move-3 me-2"> 
+                      <div>
+                        <h5 class="web-title mb-0">Buhay ni Juan Project</h5>
+                        <p>Mobile App Mock-up (2021)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="web-body-button">
+                    <div class="web-sub-card-title"><i>UX/UI Design</i></div>
+                    <a target="_blank" href="https://xd.adobe.com/view/702fd684-201a-41b4-adfd-21722c30b36f-257c/" class="btn web-button"><span style="margin-right: 5px;">More info </span><i class="bi bi-share"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-posters ">
                 <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -1385,54 +1510,6 @@
                 </div>
               </div><!-- End Portfolio Item -->
 
-
-              <!-- Web Section-->
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-                <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-15.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>"Hindsight Project (2023)</h4>
-                  <a href="assets/portfolio/masonry-portfolio/masonry-portfolio-15.png" title="Hindsight Project (2023)" data-gallery="portfolio-gallery-web-project" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a target="_blank" href="https://tk6gnkg2ta44i9pb4kzf7g.on.drv.tw/GROUP3_ITAD_MARCELO/" title="More Details" class="details-link"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-                <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-16.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>I.T. Skills Olympics - Web Design Competition Entry (2023)</h4>
-                  <a href="assets/portfolio/masonry-portfolio/masonry-portfolio-16.png" title="I.T. Skills Olympics - Web Design Competition Entry (2023)" data-gallery="portfolio-gallery-web-project" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a target="_blank" href="https://zyzlmz2pkiluhbwok2ssga.on.drv.tw/LIBRES%2C%20JAHRED%20P-UE-MANILA/LIBRES-UE/" title="More Details" class="details-link"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-                <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-14.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>My First HTML Page</h4>
-                  <p>This page is the start of my Front-end journey.</p>
-                  <a href="assets/portfolio/masonry-portfolio/masonry-portfolio-14.png" title="My First HTML Page Project" data-gallery="portfolio-gallery-web-project" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a target="_blank" href="https://gx6wuoc3l64t9fvvuuonig.on.drv.tw/LIBRES.FINAL.MIDTERM.HTML.PROJECT/FINAL%20LANDING%20PAGE/html/LIBRES_LANDINGPAGE_ITAD.html" title="More Details" class="details-link"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-                <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-17.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Hiyas Press Inc. Printing Management System (2023)</h4>
-                  <a href="assets/portfolio/masonry-portfolio/masonry-portfolio-17.png" title="Hiyas Press Inc. Printing Management System - Capstone Project" data-gallery="portfolio-gallery-web-project" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a target="_blank" href="https://tk6gnkg2ta44i9pb4kzf7g.on.drv.tw/THESIS%20PROTOTYPE%20-%20FRONTEND%20-%20LATEST/login-module.html" title="More Details" class="details-link"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-                <img src="assets/portfolio/masonry-portfolio/masonry-portfolio-19.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Buhay Ni Juan Prototype - UI/UX</h4>
-                  <a href="assets/portfolio/masonry-portfolio/masonry-portfolio-19.png" title="Buhay Ni Juan Prototype - UI/UX Design (2021)" data-gallery="portfolio-gallery-other-projects" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a target="_blank" href="https://xd.adobe.com/view/702fd684-201a-41b4-adfd-21722c30b36f-257c/" title="More Details" class="details-link"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-
             </div><!-- End Portfolio Container -->
           </div>
         </div>
@@ -1466,9 +1543,9 @@
       <!-- /Divider -->
 
       <!-- Contact Section -->
-      <section id="contact" class="contact section contact-section light-background">
+      <section id="contact" class="contact section contact-section">
         <!-- Section Title -->
-        <div class="container section-title white" data-aos="fade-up">
+        <div class="container section-title" data-aos="fade-up">
           <h2>CONTACT ME</h2>
         </div>
 
@@ -1477,7 +1554,7 @@
           <div class="row gy-4">
             
             <div class="col-lg-4">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="50">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
@@ -1493,7 +1570,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email</h3>
@@ -1541,10 +1618,10 @@
     <!-- Footer -->
     <footer id="footer" class="footer position-relative light-background">
       <div class="container">
-        <img src="assets/img/my_logo.png" alt="My Logo" style="height: 70px;">
+        <img src="assets/img/my_logo-2.png" alt="My Logo" style="height: 70px;">
         
           <div class="copyright justify-content-start">
-            <strong class="px-1 sitename">© Jahred Libres</strong><span>2025</span>
+            <span>© Developed by</span><strong class="px-1 sitename">Jahred Libres</strong>
           </div>
       </div>
     </footer>
